@@ -2,6 +2,34 @@
    GLOBAL
 =========================== */
 
+:root{
+
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
+    --primary-light:#EEF2FF;
+
+    --surface:#F8F7FF;
+
+    --heading:#111827;
+    --body:#6B7280;
+    --border:#E5E7EB;
+
+}
+
+/* =================================
+   RESET
+================================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
 *{
 
     margin:0;
@@ -160,7 +188,7 @@ nav{
 
 .eyebrow{
 
-    color:#5B5CEB;
+   color:var(--primary);
 
     font-weight:600;
 
@@ -176,15 +204,19 @@ nav{
 
     font-size:72px;
 
-    line-height:1.05;
+    line-height:1;
 
     letter-spacing:-2px;
+
+    font-weight:700;
 
     margin-bottom:15px;
 
 }
 
 .hero h2{
+
+    color:var(--heading);
 
     font-size:30px;
 
@@ -198,6 +230,7 @@ nav{
 
 .hero-description{
 
+     color:var(--body);
     font-size:18px;
 
     line-height:1.75;
@@ -222,7 +255,7 @@ nav{
 
 .primary-btn{
 
-    background:#5B5CEB;
+        background:var(--primary);
 
     color:white;
 
@@ -236,7 +269,9 @@ nav{
 
 .secondary-btn{
 
-    border:2px solid #5B5CEB;
+     border:2px solid var(--primary);
+
+    color:var(--primary);
 
     color:#5B5CEB;
 
@@ -297,7 +332,7 @@ nav{
 
     border-radius:22px;
 
-    border:1px solid #ECECEC;
+     border:1px solid var(--border);
 
     transition:.3s ease;
 
@@ -887,6 +922,49 @@ color:#111827;
 }
 
 
+/* ===========================
+   CLOSING
+=========================== */
+
+.closing{
+
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 0 5%;
+    text-align: center;
+
+}
+
+.closing-tag{
+
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+}
+
+.closing h2{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 1.4;
+    color: var(--heading);
+    margin-bottom: 24px;
+
+}
+
+.closing p{
+
+    max-width: 700px;
+    margin: auto;
+    color: var(--body);
+    font-size: 18px;
+    line-height: 1.8;
+
+}
 
 
 /* ===========================
